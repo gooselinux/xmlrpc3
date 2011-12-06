@@ -1,0 +1,33 @@
+diff -up ./client/maven-build.xml.manifest ./client/maven-build.xml
+--- ./client/maven-build.xml.manifest	2009-12-09 13:41:23.000000000 -0500
++++ ./client/maven-build.xml	2009-12-09 13:42:14.000000000 -0500
+@@ -187,6 +187,7 @@
+          compress="true" 
+          index="false" 
+          basedir="${maven.build.outputDir}" 
++         manifest="${maven.build.srcDir.0}/META-INF/MANIFEST.MF"
+          excludes="**/package.html"/>
+   </target>
+ 
+diff -up ./common/maven-build.xml.manifest ./common/maven-build.xml
+--- ./common/maven-build.xml.manifest	2009-12-09 13:41:59.000000000 -0500
++++ ./common/maven-build.xml	2009-12-09 13:41:03.000000000 -0500
+@@ -173,6 +173,7 @@
+          compress="true" 
+          index="false" 
+          basedir="${maven.build.outputDir}" 
++         manifest="${maven.build.srcDir.0}/META-INF/MANIFEST.MF"
+          excludes="**/package.html"/>
+   </target>
+ 
+diff -up ./server/maven-build.xml.manifest ./server/maven-build.xml
+--- ./server/maven-build.xml.manifest	2009-12-09 13:41:32.000000000 -0500
++++ ./server/maven-build.xml	2009-12-09 13:42:07.000000000 -0500
+@@ -183,6 +183,7 @@
+          compress="true" 
+          index="false" 
+          basedir="${maven.build.outputDir}" 
++         manifest="${maven.build.srcDir.0}/META-INF/MANIFEST.MF"
+          excludes="**/package.html"/>
+   </target>
+ 
